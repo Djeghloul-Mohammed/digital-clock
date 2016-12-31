@@ -12,9 +12,15 @@ namespace digital_clock
 {
     public partial class Form1 : Form
     {
+        Timer t = new Timer();
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            t.Interval = 1000;
         }
     }
 }
